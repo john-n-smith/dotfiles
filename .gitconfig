@@ -1,0 +1,31 @@
+[user]
+	name = John Smith
+	email = john@graze.com
+	signingkey = A5FC40AF
+
+[alias]
+	ec = config --global -e
+	co = checkout
+	up = pull --prune
+	cob = checkout -b
+	pause = !git add -A && git commit -m 'SAVEPOINT' --no-verify
+	resume = !git log -1 --format="%s"|grep -q "SAVEPOINT" && git reset HEAD~1 --mixed
+	ap = add --patch 
+	st = status
+	unstage = reset HEAD
+	lol = log --oneline --graph --decorate
+	branch = branch -vv
+	wipe = !git add -A && git commit -qm 'WIPE SAVEPOINT' && git reset HEAD~1 --hard
+
+[color]
+	ui = true
+
+[push]
+	default = tracking
+[core]
+	attributesfile = ~/.gitattributes
+	editor = vim
+	excludesfile = /Users/john/.gitignore
+
+[commit]
+  gpgsign = true
