@@ -1,7 +1,7 @@
 [user]
 	name = John Smith
 	email = john@graze.com
-	signingkey = A5FC40AF
+	signingkey = D8F0CF15A5FC40AF
 
 [alias]
 	ec = config --global -e
@@ -28,4 +28,4 @@
 	excludesfile = /Users/john/.gitignore
 
 [commit]
-  gpgsign = true
+  	#gpgsign = true
