@@ -1,4 +1,4 @@
-export PATH=$PATH:/usr/local/flex_sdk_4.6/bin:/usr/local/AIRSDK_Compiler/bin:~/.composer/vendor/bin/
+export PATH=$PATH:/usr/local/flex_sdk_4.6/bin:/usr/local/AIRSDK_Compiler/bin
 
 alias druk="docker-compose run --rm -e APPLICATION_ENV=development-docker-dispatch cli"
 alias drnj="docker-compose run --rm -e APPLICATION_ENV=development-docker-dispatch-nj cli"
