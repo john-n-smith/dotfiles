@@ -1,0 +1,2 @@
+# show method name in diffs rather than class name
+*.php diff=php
