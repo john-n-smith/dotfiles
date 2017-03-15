@@ -1,26 +1,27 @@
 # dotfiles
 
-## encryption keys
-### SSH keys
+## import SSH keys
 - copy `~/.ssh/id_rsa` to new machine
+- `chmod 400 ~/.ssh/id_rsa`
 
-### PGP keys
-- `gpg --export -a D8F0CF15A5FC40AF > public.asc` - export public key
-- `gpg --export-secret-keys -a D8F0CF15A5FC40AF > private.asc` - export private key
-- `gpg --import public.asc` - import public key
+## import PGP keys
+- copy key to `private.asc`
 - `gpg --import private.asc` - import private key
+- remove `private.asc`
 - `gpg --list-secret-keys --keyid-format LONG` - list keys
 
-## symlinks
+## install brew
+- `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+- `brew install gpg git`
 
-```
-┌── ln(1) link, ln -- make links
-│   ┌── Create a symbolic link.
-│   │                         ┌── the path to the intended symlink
-│   │                         │   can use . or ~ or other relative paths
-│   │                   ┌─────┴────────┐
-ln -s /path/to/original /path/to/symlink
-      └───────┬───────┘
-              └── the path to the original file/folder
-                  can use . or ~ or other relative paths
-```
+## utilise dotfiles
+- `mkdir ~/git ~/sequel-pro ~/iterm`
+- `git clone https://github.com/john-n-smith/dotfiles.git ~/git/dotfiles`
+- `ln -s ~/git/dotfiles/.git-completion.sh ~/.git-completion.sh`
+- `ln -s ~/git/dotfiles/.git-prompt.sh ~/.git-prompt.sh`
+- `ln -s ~/git/dotfiles/.gitattributes ~/.gitattributes`
+- `ln -s ~/git/dotfiles/.gitconfig ~/.gitconfig`
+- `ln -s ~/git/dotfiles/.profile ~/.profile`
+- `ln -s ~/git/dotfiles/ssh/config ~/.ssh/config`
+- `ln -s ~/git/dotfiles/sequel-pro/sequel-pro.plist ~/sequel-pro/sequel-pro.plist`
+- `ln -s ~/git/dotfiles/iterm/com.googlecode.iterm2.plist ~/iterm/com.googlecode.iterm2.plist`
