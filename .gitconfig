@@ -28,4 +28,6 @@
 	excludesfile = /Users/john/.gitignore
 
 [commit]
-  	#gpgsign = true
+	gpgsign = true
+[gpg]
+	program = gpg1
