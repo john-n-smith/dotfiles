@@ -5,7 +5,8 @@ alias drnj="docker-compose run --rm -e APPLICATION_ENV=development-docker-dispat
 alias dr="docker-compose run --rm cli"
 alias dtest="docker-compose run --rm cli vendor/bin/phpunit"
 alias ll="ls -lah"
-alias dreset='docker-compose run --rm -e APPLICATION_ENV=development-docker-dispatch-schema cli dispatch/bin/dispatchBuilder reset'
+alias dresetuk='docker-compose run --rm -e APPLICATION_ENV=development-docker-dispatch-schema cli dispatch/bin/dispatchBuilder reset'
+alias dresetnj='docker-compose run --rm -e APPLICATION_ENV=development-docker-dispatch-nj-schema cli dispatch/bin/dispatchBuilder reset'
 
 source ~/.git-completion.sh
 source ~/.git-prompt.sh
