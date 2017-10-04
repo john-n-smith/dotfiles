@@ -40,3 +40,4 @@ complete -F _complete_ssh_hosts scp
 
 eval $(docker-machine env)
 export DEVELOPER_EMAIL=john@graze.com
+export SLACK_USER=john
