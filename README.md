@@ -12,12 +12,11 @@
 
 ## install brew
 - `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
-- `brew install gpg git`
+- `brew install gpg bash-completion fzf`
 
 ## utilise dotfiles
 - `mkdir ~/git ~/sequel-pro ~/iterm`
 - `git clone https://github.com/john-n-smith/dotfiles.git ~/git/dotfiles`
-- `ln -s ~/git/dotfiles/.git-completion.sh ~/.git-completion.sh`
 - `ln -s ~/git/dotfiles/.git-prompt.sh ~/.git-prompt.sh`
 - `ln -s ~/git/dotfiles/.gitattributes ~/.gitattributes`
 - `ln -s ~/git/dotfiles/.gitconfig ~/.gitconfig`
