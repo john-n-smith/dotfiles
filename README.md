@@ -4,10 +4,17 @@
 - `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
 - `brew install bash-completion fzf git gpg`
 
-## Import PGP keys
+## Install RSA (SSH) key
+- `mkdir ~/.ssh`
+- `chmod 0700 ~/.ssh`
+- copy key to `~/.ssh/id_rsa`
+- `chmod 0600 ~/.ssh/id_rsa`
+- `ssh -T git@github.com` - test
+
+## Import PGP key
 - copy key to `private.asc`
 - `gpg --import private.asc` - import private key
-- remove `private.asc`
+- `rm private.asc`
 - `gpg --list-secret-keys --keyid-format LONG` - list keys
 
 ## Utilise dotfiles
