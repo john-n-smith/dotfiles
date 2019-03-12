@@ -28,3 +28,6 @@
   && ln -s ~/git/john-n-smith/dotfiles/sequel-pro/sequel-pro.plist ~/sequel-pro/sequel-pro.plist \
   && ln -s ~/git/john-n-smith/dotfiles/iterm/com.googlecode.iterm2.plist ~/iterm/com.googlecode.iterm2.plist
   ```
+
+## Install Inconsolata
+- https://fonts.google.com/specimen/Inconsolata
