@@ -2,7 +2,7 @@
 
 ## Install brew + packages
 - `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
-- `brew install bash-completion fzf git gpg`
+- `brew install bash-completion fzf git gpg pinentry-mac`
 
 ## Install RSA (SSH) key
 - `mkdir ~/.ssh`
@@ -17,6 +17,10 @@
 - `gpg --import private.asc` - import private key
 - `rm private.asc`
 - `gpg --list-secret-keys --keyid-format LONG` - list keys
+- `echo "pinentry-program /usr/local/bin/pinentry-mac" >> ~/.gnupg/gpg-agent.conf`
+- `killall gpg-agent`
+- `echo "test" | gpg --clearsign` - test
+- `git log --show-signature -1` - verify a signed commit
 
 ## Utilise dotfiles
 - `mkdir ~/git ~/sequel-pro ~/iterm ~/git/john-n-smith`
