@@ -10,6 +10,7 @@
 - copy key to `~/.ssh/id_rsa`
 - `chmod 0600 ~/.ssh/id_rsa`
 - `ssh -T git@github.com` - test
+- `ssh-add -K` - make use of ssh-agent to store passphrase in KeyChain
 
 ## Import PGP key
 - copy key to `private.asc`
