@@ -1,16 +1,16 @@
 # dotfiles
 
-## import PGP keys
+## Install brew + packages
+- `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+- `brew install bash-completion fzf git gpg`
+
+## Import PGP keys
 - copy key to `private.asc`
 - `gpg --import private.asc` - import private key
 - remove `private.asc`
 - `gpg --list-secret-keys --keyid-format LONG` - list keys
 
-## install brew + packages
-- `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
-- `brew install bash-completion fzf git gpg`
-
-## utilise dotfiles
+## Utilise dotfiles
 - `mkdir ~/git ~/sequel-pro ~/iterm ~/git/john-n-smith`
 - `git clone https://github.com/john-n-smith/dotfiles.git ~/git/john-n-smith/dotfiles`
 - ```
