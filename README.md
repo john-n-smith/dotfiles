@@ -30,7 +30,8 @@
   && ln -s ~/git/john-n-smith/dotfiles/.gitconfig ~/.gitconfig \
   && ln -s ~/git/john-n-smith/dotfiles/.profile ~/.profile \
   && ln -s ~/git/john-n-smith/dotfiles/ssh/config ~/.ssh/config \
-  && ln -s ~/git/john-n-smith/dotfiles/sequel-pro/sequel-pro.plist ~/sequel-pro/sequel-pro.plist \
+  && ln -s ~/git/john-n-smith/dotfiles/sequel-pro/Favorites.plist ~/Library/Application\ Support/Sequel\ Pro/Data/Favorites.plist \
+  && ln -s ~/git/john-n-smith/dotfiles/sequel-pro/com.sequelpro.SequelPro.plist ~/Library/Preferences/com.sequelpro.SequelPro.plist \
   && ln -s ~/git/john-n-smith/dotfiles/iterm/com.googlecode.iterm2.plist ~/iterm/com.googlecode.iterm2.plist
   ```
 
