@@ -2,21 +2,10 @@
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 # git prompt
-parse_git() {
-    status=""
-    if [ "$(git log -1 --pretty=%B 2> /dev/null)" == SAVEPOINT ]
-    then
-        status="|॥"
-    fi
-
-    branch="$(git rev-parse --abbrev-ref HEAD 2> /dev/null)"
-    if [[ ! -z "$branch" ]]
-    then
-        echo " (${branch}${status})"
-    fi
-}
-
-export PS1="\u@\h \[\033[32m\]\w\[\033[33m\]\$(parse_git)\[\033[00m\] \$ "
+source ~/.git-prompt.sh
+GIT_PS1_SHOWDIRTYSTATE='yes'
+GIT_PS1_SHOWCOLORHINTS='yes'
+PROMPT_COMMAND='__git_ps1 "\u@\h:\w" "\\\$ "'
 
 # bash completion
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
