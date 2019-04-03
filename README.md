@@ -28,6 +28,7 @@
 - ```
   ln -s ~/git/john-n-smith/dotfiles/.gitattributes ~/.gitattributes \
   && ln -s ~/git/john-n-smith/dotfiles/.gitconfig ~/.gitconfig \
+  && ln -s ~/git/john-n-smith/dotfiles/.git-prompt.sh ~/.git-prompt.sh \
   && ln -s ~/git/john-n-smith/dotfiles/.profile ~/.profile \
   && ln -s ~/git/john-n-smith/dotfiles/ssh/config ~/.ssh/config \
   && ln -s ~/git/john-n-smith/dotfiles/sequel-pro/Favorites.plist ~/Library/Application\ Support/Sequel\ Pro/Data/Favorites.plist \
