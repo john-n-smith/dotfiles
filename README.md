@@ -7,15 +7,13 @@
 ## Install RSA (SSH) key
 - `mkdir ~/.ssh`
 - `chmod 0700 ~/.ssh`
-- copy key to `~/.ssh/id_rsa`
+- `pbpaste > ~/.ssh/id_rsa`
 - `chmod 0600 ~/.ssh/id_rsa`
 - `ssh -T git@github.com` - test
 - `ssh-add -K` - make use of ssh-agent to store passphrase in KeyChain
 
 ## Import PGP key
-- copy key to `private.asc`
-- `gpg --import private.asc` - import private key
-- `rm private.asc`
+- `pbpaste | gpg --import` - import private key
 - `gpg --list-secret-keys --keyid-format LONG` - list keys
 - `echo "pinentry-program /usr/local/bin/pinentry-mac" >> ~/.gnupg/gpg-agent.conf`
 - `killall gpg-agent`
