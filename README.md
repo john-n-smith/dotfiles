@@ -3,6 +3,7 @@
 ## Install brew + packages
 - `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
 - `brew install bash-completion fzf git gpg pinentry-mac`
+- `$(brew --prefix)/opt/fzf/install` - do not "shell configuration files"
 
 ## Install RSA (SSH) key
 - `mkdir ~/.ssh`
