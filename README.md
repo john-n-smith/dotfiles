@@ -21,17 +21,15 @@
 - `git log --show-signature -1` - verify a signed commit
 
 ## Utilise dotfiles
-- `mkdir ~/git ~/sequel-pro ~/iterm ~/git/john-n-smith`
-- `git clone https://github.com/john-n-smith/dotfiles.git ~/git/john-n-smith/dotfiles`
+- `mkdir ~/Documents/git ~/Documents/git/john-n-smith`
+- `git clone https://github.com/john-n-smith/dotfiles.git ~/Documents/git/john-n-smith/dotfiles`
 - ```
-  ln -s ~/git/john-n-smith/dotfiles/.gitattributes ~/.gitattributes \
+  ln -s ~/Documents/git ~/git \
+  && ln -s ~/git/john-n-smith/dotfiles/.gitattributes ~/.gitattributes \
   && ln -s ~/git/john-n-smith/dotfiles/.gitconfig ~/.gitconfig \
   && ln -s ~/git/john-n-smith/dotfiles/.git-prompt.sh ~/.git-prompt.sh \
   && ln -s ~/git/john-n-smith/dotfiles/.profile ~/.profile \
-  && ln -s ~/git/john-n-smith/dotfiles/ssh/config ~/.ssh/config \
-  && ln -s ~/git/john-n-smith/dotfiles/sequel-pro/Favorites.plist ~/Library/Application\ Support/Sequel\ Pro/Data/Favorites.plist \
-  && ln -s ~/git/john-n-smith/dotfiles/sequel-pro/com.sequelpro.SequelPro.plist ~/Library/Preferences/com.sequelpro.SequelPro.plist \
-  && ln -s ~/git/john-n-smith/dotfiles/iterm/com.googlecode.iterm2.plist ~/iterm/com.googlecode.iterm2.plist
+  && ln -s ~/git/john-n-smith/dotfiles/ssh/config ~/.ssh/config
   ```
 
 ## Install Inconsolata
