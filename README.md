@@ -1,9 +1,14 @@
 # dotfiles
 
-## Install brew + packages
+## Install fonts
+- https://fonts.google.com/specimen/Inconsolata
+- https://github.com/Falkor/dotfiles/blob/master/fonts/SourceCodePro%2BPowerline%2BAwesome%2BRegular.ttf
+
+## Install brew + packages, Oh My Zsh, Powerlevel10k
 - `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
-- `brew install bash-completion fzf git gpg pinentry-mac`
-- `$(brew --prefix)/opt/fzf/install` - do not "shell configuration files"
+- `brew install iterm2 fzf git gpg pinentry-mac`
+- `sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
+- `git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k`
 
 ## Install RSA (SSH) key
 - `mkdir ~/.ssh`
@@ -28,10 +33,7 @@
   ln -s ~/Documents/git ~/git \
   && ln -s ~/git/john-n-smith/dotfiles/.gitattributes ~/.gitattributes \
   && ln -s ~/git/john-n-smith/dotfiles/.gitconfig ~/.gitconfig \
-  && ln -s ~/git/john-n-smith/dotfiles/.git-prompt.sh ~/.git-prompt.sh \
-  && ln -s ~/git/john-n-smith/dotfiles/.profile ~/.profile \
+  && ln -s ~/git/john-n-smith/dotfiles/.zshrc ~/.zshrc \
   && ln -s ~/git/john-n-smith/dotfiles/ssh/config ~/.ssh/config
   ```
-
-## Install Inconsolata
-- https://fonts.google.com/specimen/Inconsolata
+  
