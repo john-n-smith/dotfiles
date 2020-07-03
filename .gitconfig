@@ -1,6 +1,6 @@
 [user]
 	name = John Smith
-	email = john@graze.com
+	email = john@johnsmith.io
 	signingkey = D8F0CF15A5FC40AF
 
 [alias]
@@ -25,7 +25,8 @@
 [core]
 	attributesfile = ~/.gitattributes
 	editor = vim
-	excludesfile = /Users/john/.gitignore
+	excludesfile = ~/.gitignore
+	trustctime = false
 
 [commit]
 	gpgsign = true
@@ -34,3 +35,5 @@
   insteadOf = https://github.com/
 [pager]
 	branch = false
+[gpg]
+	program = gpg
