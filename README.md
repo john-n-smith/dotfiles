@@ -1,16 +1,11 @@
 # dotfiles
 
-## Install fonts
-- https://fonts.google.com/specimen/Inconsolata
-- https://github.com/Falkor/dotfiles/blob/master/fonts/SourceCodePro%2BPowerline%2BAwesome%2BRegular.ttf
+## Install brew + packages
+- `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"` (installs xcode, which installs git)
+- `brew install fzf node gpg pinentry-mac`
+- `npm install --global pure-prompt`
 
-## Install brew + packages, Oh My Zsh, Powerlevel10k
-- `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
-- `brew install iterm2 fzf git gpg pinentry-mac`
-- `sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
-- `git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k`
-
-## Install RSA (SSH) key
+## Install RSA (SSH) keys, e.g.
 - `mkdir ~/.ssh`
 - `chmod 0700 ~/.ssh`
 - `pbpaste > ~/.ssh/id_rsa`
@@ -36,4 +31,10 @@
   && ln -s ~/git/john-n-smith/dotfiles/.zshrc ~/.zshrc \
   && ln -s ~/git/john-n-smith/dotfiles/ssh/config ~/.ssh/config
   ```
+ 
+ ## Make iTerm pretty
+ - https://github.com/chrissimpkins/codeface/tree/master/fonts/inconsolata-g, install font
+ - iTerm > Preferences > General > Preferences
+    - [x] Load preferences (/Users/john/Documents/git/john-n-smith/dotfiles/iterm)
+    - [x] Save changes 
   
