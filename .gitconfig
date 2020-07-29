@@ -16,6 +16,7 @@
 	lol = log --oneline --graph --decorate
 	branch = branch -vv
 	wipe = !git add -A && git commit -qm 'WIPE SAVEPOINT' && git reset HEAD~1 --hard
+  trim = !~/git/john-n-smith/dotfiles/scripts/git-trim-branches.sh
 
 [color]
 	ui = true
