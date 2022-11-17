@@ -29,7 +29,8 @@
   && ln -s ~/git/john-n-smith/dotfiles/.gitattributes ~/.gitattributes \
   && ln -s ~/git/john-n-smith/dotfiles/.gitconfig ~/.gitconfig \
   && ln -s ~/git/john-n-smith/dotfiles/.zshrc ~/.zshrc \
-  && ln -s ~/git/john-n-smith/dotfiles/ssh/config ~/.ssh/config
+  && ln -s ~/git/john-n-smith/dotfiles/ssh/config ~/.ssh/config \
+  && ln -s ~/git/john-n-smith/dotfiles/rclone/rclone.conf ~/.config/rclone/rclone.conf
   ```
  
  ## Make iTerm pretty
