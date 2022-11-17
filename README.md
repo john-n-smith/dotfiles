@@ -2,7 +2,7 @@
 
 ## Install brew + packages
 - `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"` (installs xcode, which installs git)
-- `brew install fzf node gpg pinentry-mac rclone`
+- `brew install fzf node gpg pinentry-mac rclone zsh-syntax-highlighting`
 - `npm install --global pure-prompt`
 
 ## Install RSA (SSH) keys, e.g.
