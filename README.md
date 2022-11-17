@@ -36,6 +36,8 @@
 Documents and Desktop are synced via iCloud Drive. `~/git` is synced using rclone.
 
 ### Rclone
+It's probably quickest to check out all repos using git, then use the following steps to get any changes that weren't committed.
+
 - Fetch client secret from https://console.cloud.google.com/apis/credentials
 - Set client secret in `~/.config/rclone/rclone.conf`
 - Fetch a token, follow guided steps from `rclone config`
