@@ -25,8 +25,7 @@
 - `mkdir ~/Documents/git ~/Documents/git/john-n-smith`
 - `git clone https://github.com/john-n-smith/dotfiles.git ~/Documents/git/john-n-smith/dotfiles`
 - ```
-  ln -s ~/Documents/git ~/git \
-  && ln -s ~/git/john-n-smith/dotfiles/.gitattributes ~/.gitattributes \
+  ln -s ~/git/john-n-smith/dotfiles/.gitattributes ~/.gitattributes \
   && ln -s ~/git/john-n-smith/dotfiles/.gitconfig ~/.gitconfig \
   && ln -s ~/git/john-n-smith/dotfiles/.zshrc ~/.zshrc \
   && ln -s ~/git/john-n-smith/dotfiles/ssh/config ~/.ssh/config \
