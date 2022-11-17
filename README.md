@@ -2,7 +2,7 @@
 
 ## Install brew + packages
 - `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"` (installs xcode, which installs git)
-- `brew install fzf node gpg pinentry-mac`
+- `brew install fzf node gpg pinentry-mac rclone`
 - `npm install --global pure-prompt`
 
 ## Install RSA (SSH) keys, e.g.
@@ -31,6 +31,15 @@
   && ln -s ~/git/john-n-smith/dotfiles/ssh/config ~/.ssh/config \
   && ln -s ~/git/john-n-smith/dotfiles/rclone/rclone.conf ~/.config/rclone/rclone.conf
   ```
+
+## Sync files
+Documents and Desktop are synced via iCloud Drive. `~/git` is synced using rclone.
+
+### Rclone
+- Fetch client secret from https://console.cloud.google.com/apis/credentials
+- Set client secret in `~/.config/rclone/rclone.conf`
+- Fetch a token, follow guided steps from `rclone config`
+- `rclone sync johnsmith.io-google-drive:current /Users/john/git --links --progress --checksum --fast-list --transfers=40 --checkers=40 --drive-chunk-size=1M --max-backlog 200000`
  
  ## Make iTerm pretty
  - https://github.com/chrissimpkins/codeface/tree/master/fonts/inconsolata-g, install font
