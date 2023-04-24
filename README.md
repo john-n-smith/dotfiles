@@ -1,7 +1,7 @@
 # dotfiles
 
 ## Install brew + packages
-- `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"` (installs xcode, which installs git)
+- `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"` (installs xcode, which installs git)
 - `brew install fzf node gpg pinentry-mac rclone zsh-syntax-highlighting`
 - `npm install --global pure-prompt`
 
@@ -22,7 +22,7 @@
 - `git log --show-signature -1` - verify a signed commit
 
 ## Utilise dotfiles
-- `mkdir ~/Documents/git ~/Documents/git/john-n-smith`
+- `mkdir ~/git ~/git/john-n-smith`
 - `git clone https://github.com/john-n-smith/dotfiles.git ~/Documents/git/john-n-smith/dotfiles`
 - ```
   ln -s ~/git/john-n-smith/dotfiles/.gitattributes ~/.gitattributes \
