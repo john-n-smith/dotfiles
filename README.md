@@ -23,7 +23,7 @@
 
 ## Utilise dotfiles
 - `mkdir ~/git ~/git/john-n-smith`
-- `git clone https://github.com/john-n-smith/dotfiles.git ~/Documents/git/john-n-smith/dotfiles`
+- `git clone https://github.com/john-n-smith/dotfiles.git ~/git/john-n-smith/dotfiles`
 - ```
   ln -s ~/git/john-n-smith/dotfiles/.gitattributes ~/.gitattributes \
   && ln -s ~/git/john-n-smith/dotfiles/.gitconfig ~/.gitconfig \
